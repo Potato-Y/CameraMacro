@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MacroSetDialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/text_cycle" />
+
+            <EditText
+                android:id="@+id/cycleSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="60"
+                android:textAlignment="viewEnd" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/text_second" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switchDateSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/switch_dateset" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutDateSet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox_All"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:scrollbars="horizontal"
+                            android:text="@string/checkBox_All"
+                            android:textColor="#B82222" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_Sun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:scrollbars="horizontal"
+                            android:text="@string/checkBox_S"
+                            android:textColor="#B82222" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_Mon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:scrollbars="horizontal"
+                            android:text="@string/checkBox_M" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_Tue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:scrollbars="horizontal"
+                            android:text="@string/checkBox_T" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_Wen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:scrollbars="horizontal"
+                            android:text="@string/checkBox_W" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_Thu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:scrollbars="horizontal"
+                            android:text="@string/checkBox_T" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_Fri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:scrollbars="horizontal"
+                            android:text="@string/checkBox_F" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_Sat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:scrollbars="horizontal"
+                            android:text="@string/checkBox_S"
+                            android:textColor="#2196F3" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Switch
+                    android:id="@+id/switchActivityTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/switch_timeset" />
+
+                <TableLayout
+                    android:id="@+id/TableLayoutActivityTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="@string/text_starttime" />
+
+                        <EditText
+                            android:id="@+id/StartTimeHH"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="HH"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/StartTimemm"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="mm"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="@string/text_endtime" />
+
+                        <EditText
+                            android:id="@+id/EndTimeHH"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="HH"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text=":" />
+
+                        <EditText
+                            android:id="@+id/EndTimemm"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="mm"
+                            android:inputType="number"
+                            android:maxLength="2" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/button_start" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

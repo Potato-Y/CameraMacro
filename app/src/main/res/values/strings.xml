@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Camera Macro</string>
+    <string name="switch_dateset">Setting date and time conditions</string>
+    <string name="switch_timeset">Activation time</string>
+    <string name="checkBox_All">A</string>
+    <string name="checkBox_S">S</string>
+    <string name="checkBox_M">M</string>
+    <string name="checkBox_T">T</string>
+    <string name="checkBox_W">W</string>
+    <string name="checkBox_F">F</string>
+    <string name="button_start">start</string>
+    <string name="button_blackscreen">Black Screen</string>
+    <string name="button_settingandstart">Setting And Start</string>
+    <string name="button_opensource">OpenSource</string>
+    <string name="text_cycle">Cycle</string>
+    <string name="text_second">second</string>
+    <string name="text_starttime">Start time</string>
+    <string name="text_endtime">End time</string>
+</resources>
